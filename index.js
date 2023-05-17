@@ -11,6 +11,7 @@ app.use(express.json());
 app.use(cors());
 
 const JWT_SECRET = "fkgfdkfogd{}234jgkmmmmmkdjgfgfncddjsasqw87";
+const TOKEN_EXPIRATION_TIME = "1h";
 
 mongoose.connect("mongodb+srv://davidwale2003:Davido2003@cluster0.cbk7mhj.mongodb.net/test?retryWrites=true&w=majority", {
   useNewUrlParser: true,
@@ -56,7 +57,9 @@ app.post("/", async (req, res) => {
   }
 
   if (await bcrypt.compare(password, user.password)) {
-    const token = jwt.sign({ email: user.email }, JWT_SECRET);
+    const token = jwt.sign({ email: user.email }, JWT_SECRET, {
+      expiresIn: TOKEN_EXPIRATION_TIME,
+    });
     return res.json({ status: "ok", data: token });
   } else {
     return res.status(401).send({ message: "Incorrect password" });
