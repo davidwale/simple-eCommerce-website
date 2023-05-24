@@ -13,7 +13,8 @@ app.use(cors());
 const JWT_SECRET = "fkgfdkfogd{}234jgkmmmmmkdjgfgfncddjsasqw87";
 const TOKEN_EXPIRATION_TIME = "1h";
 
-mongoose.connect("mongodb+srv://davidwale2003:Davido2003@cluster0.cbk7mhj.mongodb.net/test?retryWrites=true&w=majority", {
+// mongoose connection here
+mongoose.connect("mongodb+srv://<mongoose cluster link here!!!>", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
