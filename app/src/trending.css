@@ -1,0 +1,92 @@
+.products-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* space between cards */
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .product-card {
+    background-color: #f5f5f5;
+    border: 1px solid rgb(241, 241, 241);
+    border-radius: 10px;
+     overflow: hidden;
+    cursor: pointer;
+    width: calc(25% - 120px);  /* 4 cards in a row, accounting for the 20px gap */
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+  }
+  
+  .product-card img {
+    width: 100%;
+   height: 120px;
+    object-fit: cover;
+  }
+  .trend h1 {
+    font-size: 1.5rem;
+  }
+  
+  .product-card p {
+    text-align: center;
+    color: grey;
+  }
+
+  .popular-products-container {
+    background-color: #f1f0f0;
+    display: flex;
+    flex-wrap: wrap;
+   padding: 0 70px;
+    gap: 20px; /* space between cards */
+    justify-content: center;
+  }
+.popular-product-card {
+  margin-top: 20px;
+  max-width: 200px;
+  display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+  width: 80%; 
+  border: 1px solid rgb(201, 199, 199);
+    border-radius: 10px;
+     overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+.popular-product-card:hover {
+  transform: translateY(-5px);
+}
+.popular-product-card img {
+  display: flex;
+  width: 100%;
+}
+
+.popular-product-card h4 {
+  width: 100%;
+  margin: 10px 0;
+}
+
+  .price-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 40px;
+  }
+  
+  .original-price {
+    text-decoration: line-through;
+    color: #999;
+    font-size: 0.9rem;
+  }
+  
+  .discounted-price {
+    color: #8F6E5D;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  
+  

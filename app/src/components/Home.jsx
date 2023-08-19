@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import products from "./product";
 import CartPage from "./cart";
 import Navbar from "./navbar";
+import Header from "./header";
+import TrendingProducts from "./trending";
+import PopularProducts from "./products";
 
 
 export default function UserHome({ userData }) {
@@ -21,7 +24,9 @@ export default function UserHome({ userData }) {
     <div>
   <Navbar />
 <div className="container">
-      
+      <Header />
+      <TrendingProducts /> 
+      <PopularProducts />
       <div className="user-info">
         <h1>Welcome Back {userData.fname}</h1>
     

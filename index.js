@@ -14,7 +14,7 @@ const JWT_SECRET = "fkgfdkfogd{}234jgkmmmmmkdjgfgfncddjsasqw87";
 const TOKEN_EXPIRATION_TIME = "1h";
 
 // mongoose connection here
-mongoose.connect("mongodb+srv://<mongoose cluster link here!!!>", {
+mongoose.connect("mongodb+srv://davidwale2003:davido2003@cluster0.cbk7mhj.mongodb.net/?retryWrites=true&w=majority", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });

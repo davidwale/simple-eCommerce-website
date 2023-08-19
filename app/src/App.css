@@ -1,4 +1,10 @@
+body {
+  background-color: #f5f5f5;
+}
 
+html {
+  scroll-behavior: smooth;
+}
 .navbar {
   background-color: #f5f5f5;
  
@@ -8,6 +14,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 10px 70px;
 }
 
 .logo {
@@ -15,12 +22,17 @@
   color: #333;
   text-decoration: none;
 }
+.logo img {
+width: 90px;}
 
 .menu {
   display: flex;
 }
-
+.nav-icons {
+  margin: 10px;
+}
 .menu-link {
+  margin: 10px;
   margin-left: 20px;
   color: #333;
   text-decoration: none;
@@ -29,6 +41,66 @@
 
 .menu-link:hover {
   color: #0cc2e2;
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 10px;
+  max-width: 100%;
+  background-color: #f1f0f0;
+}
+
+.header-img {
+  background-color: #f1f0f0;
+  width: 400px !important;
+}
+.header-text {
+  flex: 1;
+  padding-left: 75px;
+  margin-right: 150px;
+  max-width: 40%;
+}
+
+.header-text h1 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.header-text p {
+  font-size: 0.9rem;
+}
+
+.header-slider {
+  flex: 1;
+  max-width: 400px;
+  margin-left: 190px;
+  padding-right: 145px;
+}
+.slick-slide {
+  max-width: 400px !important;
+}
+.slick-slide img {
+  background-color: #f1f0f0;
+  width: 400px !important;
+  max-height: 400px; /* You can adjust this value based on how large you want the images to appear */
+  display: block;
+  object-fit: cover;
+}
+.header-btn {
+  height: 40px;
+  width: 90px;
+  border-radius: 20px;
+  border: none;
+  background-color: #8F6E5D;
+  cursor: pointer;
+  color: #fff;
+}
+
+@media screen and (max-width: 960px) {
+  .header-slider {
+    margin-left: 120px;
+    padding-right: 90px;  }
 }
 .login-form {
   max-width: 400px;
@@ -41,7 +113,7 @@
 }
 
 h1 {
-  color: #0cc2e2;
+  color: #8F6E5D;
 }
 
 .form-group {
@@ -207,7 +279,6 @@ h1 {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 50px;
 }
 .logo {
   position: relative;
@@ -264,7 +335,6 @@ h1 {
 
 a {
   display: block;
-  margin-top: 20px;
   text-decoration: none;
   color: #007bff;
   font-weight: bold;
