@@ -9,6 +9,63 @@ html {
   background-color: #f5f5f5;
  
 }
+/* Existing styles for desktop view */
+.navbar .container-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .menu {
+    display: flex;
+  }
+}
+
+/* Styles for mobile view */
+
+
+@media screen and (max-width: 768px) {
+  .navbar .container-nav {
+    position: relative;
+    margin: 22px 0;
+  }
+
+  .navbar .logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .hamburger {
+    position: absolute;
+    left: 15px;
+  }
+
+  .menu {
+    display: none;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    text-align: center;
+  }
+
+  .menu.open {
+    display: block;
+  }
+
+  .nav-icon {
+    position: absolute;
+    right: 15px;
+  }
+
+  .nav-icons {
+    margin-left: 10px;
+  }
+}
+
 
 .container-nav {
   display: flex;
@@ -25,9 +82,7 @@ html {
 .logo img {
 width: 90px;}
 
-.menu {
-  display: flex;
-}
+
 .nav-icons {
   margin: 10px;
 }
@@ -40,27 +95,46 @@ width: 90px;}
 }
 
 .menu-link:hover {
-  color: #0cc2e2;
+  color: #8F6E5D;
 }
 .header-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 40px 10px;
-  max-width: 100%;
-  background-color: #f1f0f0;
+  position: relative;
+  width: 100%;
+  height: 400px;  /* adjust as per your design needs */
+  background-size: cover;
+  background-position: center;
+  transition: background-image 1s ease-in-out;
 }
 
-.header-img {
-  background-color: #f1f0f0;
-  width: 400px !important;
+.header-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* adjust the darkness with the last value */
+  z-index: 1;
 }
+
 .header-text {
-  flex: 1;
-  padding-left: 75px;
-  margin-right: 150px;
-  max-width: 40%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  color: white;  /* You can adjust this based on your design needs */
+  text-align: center;
 }
+
+/* .header-btn {
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+} */
+
 
 .header-text h1 {
   font-size: 1.5rem;
@@ -72,18 +146,11 @@ width: 90px;}
 }
 
 .header-slider {
-  flex: 1;
-  max-width: 400px;
-  margin-left: 190px;
-  padding-right: 145px;
+  width: 100%;
 }
-.slick-slide {
-  max-width: 400px !important;
-}
+
 .slick-slide img {
   background-color: #f1f0f0;
-  width: 400px !important;
-  max-height: 400px; /* You can adjust this value based on how large you want the images to appear */
   display: block;
   object-fit: cover;
 }
@@ -98,10 +165,8 @@ width: 90px;}
 }
 
 @media screen and (max-width: 960px) {
-  .header-slider {
-    margin-left: 120px;
-    padding-right: 90px;  }
-}
+
+ }
 .login-form {
   max-width: 400px;
   

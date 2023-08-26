@@ -5,6 +5,8 @@ import Navbar from "./navbar";
 import Header from "./header";
 import TrendingProducts from "./trending";
 import PopularProducts from "./products";
+import Brand from "./brands";
+import Footer from "./footer";
 
 
 export default function UserHome({ userData }) {
@@ -27,7 +29,9 @@ export default function UserHome({ userData }) {
       <Header />
       <TrendingProducts /> 
       <PopularProducts />
-      <div className="user-info">
+      <Brand /> 
+      <Footer />
+      {/* <div className="user-info">
         <h1>Welcome Back {userData.fname}</h1>
     
         
@@ -47,7 +51,7 @@ export default function UserHome({ userData }) {
           </div>
         ))}
        
-      </div>
+      </div> */}
     </div>
     </div>
     

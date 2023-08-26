@@ -1,0 +1,36 @@
+.top-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* This ensures that all items in the top-section are vertically centered */
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.brand {
+  width: 100%;
+}
+
+.item {
+  text-align: center; /* This centers both the icon and the text horizontally */
+  flex: 1; /* This ensures that all items take up equal width */
+}
+
+.item p {
+  display: inline-block;
+  padding-right: 40px;
+}
+
+.item p .icon {
+  display: block;
+  font-size: 60px;
+  margin: 0 auto; /* This ensures the icon is horizontally centered */
+}
+
+.bottom-section {
+  width: 95%;
+  margin: 10px;
+}
+.bottom-section img {
+  width: 120px !important;
+  height: auto !important;
+}

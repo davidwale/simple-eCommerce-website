@@ -5,14 +5,14 @@ const popularProducts = [
   {
     id: 1,
     imageUrl: './images/iphonee.png',
-    title: 'iPhone 12 pro max',
+    title: 'Apple iPhone 12 pro max 64GB Silver',
     originalPrice: 100.00,
     discountedPrice: 75.00
   },
   {
     id: 2,
     imageUrl: './images/iphonee.png',
-    title: 'Popular Product 2',
+    title: 'Apple iPhone XR 64 GB Black',
     originalPrice: 150.00,
     discountedPrice: 110.00
   },
