@@ -10,7 +10,7 @@ const trendingProducts = [
   },
   {
     id: 2,
-    imageUrl: './images/bl.png',
+    imageUrl: './images/laptop.png',
     title: 'speaker',
   },
   {
@@ -20,17 +20,17 @@ const trendingProducts = [
   },
   {
     id: 4,
-    imageUrl: './images/bl.png',
+    imageUrl: './images/airpodsmax.webp',
     title: 'Headphones',
   },
   {
     id: 5,
-    imageUrl: './images/laptop.png',
+    imageUrl: './images/iphone5.png',
     title: 'Laptops',
   },
   {
     id: 6,
-    imageUrl: './images/bl.png',
+    imageUrl: './images/iphone5.png',
     title: 'Accessories',
   },
   
@@ -38,17 +38,19 @@ const trendingProducts = [
 
 function ProductCard({ product }) {
   return (
-    <div className="product-card">
-      <img src={product.imageUrl} alt={product.title} />
+    <div className="product-wrapper">
+      <div className="product-card">
+        <img src={product.imageUrl} alt={product.title} />
+      </div>
       <p>{product.title}</p>
     </div>
   );
 }
 
+
 function TrendingProducts() {
   return (
     <div className='trend'>
-        <h1>Categories</h1>
     <div className="products-container">
       {trendingProducts.map(product => (
         <ProductCard key={product.id} product={product} />

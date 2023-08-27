@@ -4,84 +4,84 @@ import '../trending.css';
 const popularProducts = [
   {
     id: 1,
-    imageUrl: './images/iphonee.png',
+    imageUrl: './images/iphone5.png',
     title: 'Apple iPhone 12 pro max 64GB Silver',
     originalPrice: 100.00,
-    discountedPrice: 75.00
+    discountedPrice: 0
   },
   {
     id: 2,
-    imageUrl: './images/iphonee.png',
+    imageUrl: './images/iphone5.png',
     title: 'Apple iPhone XR 64 GB Black',
     originalPrice: 150.00,
     discountedPrice: 110.00
   },
   {
     id: 3,
-    imageUrl: './images/iphonee.png',
+    imageUrl: './images/iphone5.png',
     title: 'Popular Product 2',
     originalPrice: 150.00,
     discountedPrice: 110.00
   },
   {
     id: 4,
-    imageUrl: './images/iphonee.png',
+    imageUrl: './images/iphone5.png',
     title: 'Popular Product 2',
     originalPrice: 150.00,
     discountedPrice: 110.00
   },
   {
     id: 5,
-    imageUrl: './images/iphonee.png',
+    imageUrl: './images/iphone5.png',
     title: 'Popular Product 2',
     originalPrice: 150.00,
     discountedPrice: 110.00
   },
   {
     id: 6,
-    imageUrl: './images/iphonee.png',
+    imageUrl: './images/iphone5.png',
     title: 'Popular Product 2',
     originalPrice: 150.00,
     discountedPrice: 110.00
   },
   {
     id: 7,
-    imageUrl: './images/iphonee.png',
+    imageUrl: './images/iphone5.png',
     title: 'Popular Product 2',
     originalPrice: 150.00,
     discountedPrice: 110.00
   },
   {
     id: 8,
-    imageUrl: './images/iphonee.png',
+    imageUrl: './images/iphone5.png',
     title: 'Popular Product 2',
     originalPrice: 150.00,
     discountedPrice: 110.00
   },
   {
     id: 9,
-    imageUrl: './images/ipad.png',
+    imageUrl: './images/iphone5.png',
     title: 'Popular Product 2',
     originalPrice: 150.00,
     discountedPrice: 110.00
   },
   {
     id: 10,
-    imageUrl: './images/iphonee.png',
+    imageUrl: './images/iphone5.png',
     title: 'Popular Product 2',
     originalPrice: 150.00,
     discountedPrice: 110.00
   },
   {
     id: 11,
-    imageUrl: './images/iphonee.png',
+    imageUrl: './images/iphone5.png',
     title: 'Popular Product 2',
     originalPrice: 150.00,
     discountedPrice: 110.00
   },
   {
     id: 12,
-    imageUrl: './images/iphonee.png',
+    imageUrl: './images/iphone5.png',
     title: 'Popular Product 2',
     originalPrice: 150.00,
     discountedPrice: 110.00
