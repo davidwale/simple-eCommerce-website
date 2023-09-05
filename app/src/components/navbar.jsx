@@ -21,10 +21,10 @@ const Navbar = () => {
         
         <div className={`menu ${menuOpen ? 'open' : ''}`}>
           <Link to="/" className="menu-link">HOME</Link>
-          <Link to="/about" className="menu-link">ABOUT</Link>
-          <Link to="/contact" className="menu-link">CONTACT</Link>
-          <Link to="/blog" className="menu-link">BLOG</Link>
-          <Link to="/faq" className="menu-link">FAQ</Link>
+          <Link to="/about" className="menu-link">CATEGORIES</Link>
+          <Link to="/contact" className="menu-link">BEST SELLERS</Link>
+          <Link to="/blog" className="menu-link">OFFERS</Link>
+          <Link to="/faq" className="menu-link">SUPPORT</Link>
         </div>
         
         <div className="nav-icon">

@@ -49,6 +49,14 @@
       flex: 1 1 calc(50% - 40px); /* Reduced gap for smaller screens */
       max-width: 30%;
   }
+
+  .original-price {
+    font-size: 10px !important;
+  }
+  
+  .discounted-price {
+    font-size: 12px !important;
+  }
 }
 
 /* Responsive settings for extra small screens */
@@ -127,15 +135,17 @@
 
 
 .popular-product-card h4 {
-  margin: 10px 0;
+  margin: 10px 0 0px 0;
   padding-left: 10px;
+  font-size: 12px;
+  font-family: 'Roboto', sans-serif;
 }
 
   .price-section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px 10px;
+    padding: 3px 10px;
   }
   
   .original-price {

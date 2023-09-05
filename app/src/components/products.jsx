@@ -5,14 +5,14 @@ const popularProducts = [
   {
     id: 1,
     imageUrl: './images/iphone5.png',
-    title: 'Apple iPhone 12 pro max 64GB Silver',
+    title: 'iPhone 12 pro max 64GB Silver',
     originalPrice: 100.00,
     discountedPrice: 0
   },
   {
     id: 2,
     imageUrl: './images/iphone5.png',
-    title: 'Apple iPhone XR 64 GB Black',
+    title: 'iPhone XR 64 GB Black',
     originalPrice: 150.00,
     discountedPrice: 110.00
   },
@@ -89,10 +89,18 @@ const popularProducts = [
 ];
 
 function PopularProductCard({ product }) {
+
+  function truncateTitle(title) {
+    if (title.length > 20) {
+      return title.substr(0, 19) + '...';
+    }
+    return title;
+  }
+
   return (
     <div className="popular-product-card">
       <img src={product.imageUrl} alt={product.title} />
-      <h4>{product.title}</h4>
+      <h4>{truncateTitle(product.title)}</h4>
       <div className="price-section">
         <span className="discounted-price">${product.originalPrice.toFixed(2)}</span>
         <span className="original-price">${product.discountedPrice.toFixed(2)}</span>

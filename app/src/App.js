@@ -6,6 +6,7 @@ import Signup from './components/signup';
 import Dashboard from './components/dashboard';
 import CartPage from './components/cart';
 import ProductPage from './components/productList';
+import ProductDetail from './components/productDetails';
 
 
 function App() {
@@ -31,7 +32,7 @@ function App() {
           <Route path="/dashboard" element={<Dashboard addToCartHandler={addToCartHandler} />} />
           <Route path="/cart" element={<CartPage cart={cart} />} />
           <Route path="/products" element={<ProductPage />} />
-          
+          <Route path="/details" element={<ProductDetail />} />
         </Routes>
       </Router>
     </div>
